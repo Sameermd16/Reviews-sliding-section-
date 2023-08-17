@@ -20,7 +20,7 @@ const reviews = [
     {
       id: 3,
       name: 'peter jones',
-      job: 'intern',
+      job: 'Intern',
       image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
       text:
@@ -29,7 +29,7 @@ const reviews = [
     {
       id: 4,
       name: 'bill anderson',
-      job: 'the boss',
+      job: 'The boss',
       image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
       text:

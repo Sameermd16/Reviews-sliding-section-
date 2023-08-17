@@ -4,13 +4,13 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa'
 
 export default function Review() {
     
-    console.log(reviews)
-    console.log(reviews.length)
+    // console.log(reviews)
+    // console.log(reviews.length)
 
     const [index, setIndex] = useState(0)
     const {job, name, text, image} = reviews[index]
 
-    const checkIndex = (indexNumber) => {
+    function checkIndex(indexNumber) {
         if(indexNumber > reviews.length - 1) {
             return 0
         }
@@ -34,9 +34,13 @@ export default function Review() {
         })
     }
 
-    const surpriseMe = () => {
-        const randomIndex =  Math.floor(Math.random * 4)
-        setIndex(randomIndex)
+    function surpriseMe() {
+        let randomIndex =  Math.floor(Math.random() * (reviews.length))
+        // console.log(randomIndex)
+        if(randomIndex  === index) {
+            randomIndex = randomIndex + 1
+        }
+        setIndex(checkIndex(randomIndex))
     }
 
     return (
